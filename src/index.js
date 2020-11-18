@@ -4,12 +4,19 @@ import './index.css';
 import App from './components/App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
+import { Auth0Provider } from '@auth0/auth0-react';
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
+    <Auth0Provider
+      domain='sokos6.auth0.com'
+      clientId='TODO'
+      redirectUri={window.location.origin}
+    >
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    </Auth0Provider>
   </React.StrictMode>,
   document.getElementById('root')
 );
