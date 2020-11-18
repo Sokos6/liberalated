@@ -56,51 +56,6 @@ code {
   top: 80%;
   left: 83%;
 }
-
-/* for navbar */
-
-.Nav {
-  background-color: #fff;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.0975);
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 2;
-  -webkit-transition: height 0.2s ease-in-out;
-  transition: height 0.2s ease-in-out;
-  height: 54px;
-}
-.Nav-menus {
-  display: flex;
-  flex-direction: row;
-  height: 77px;
-  width: 70%;
-  margin: 0 auto;
-  padding: 11px 40px;
-}
-.Nav-brand-logo {
-  display: block;
-  background-position: -238px -1px;
-  background-image: url(./sprite.png);
-  background-size: 394px 379px;
-  background-repeat: no-repeat;
-  height: 35px;
-  width: 105px;
-  text-indent: -1000%;
-}
-.Nav-user-button {
-  display: block;
-  background-position: -296px -176px;
-  background-image: url(./sprite.png);
-  background-size: 390px 388px;
-  background-repeat: no-repeat;
-  height: 35px;
-  width: 24px;
-  text-indent: -1000%;
-  margin-left: auto;
-}
-
-/* /////////// for post */
 .Post {
   border-radius: 3px;
   border: 1px solid #e6e6e6;

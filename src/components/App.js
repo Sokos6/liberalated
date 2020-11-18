@@ -11,6 +11,8 @@ const httpLink = new HttpLink({
   uri: 'https://modernliberal.hasura.app/v1/graphql',
 });
 
+console.log(httpLink);
+
 function App() {
   const client = new ApolloClient({
     link: httpLink,
